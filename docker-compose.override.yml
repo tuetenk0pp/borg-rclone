@@ -1,0 +1,11 @@
+version: '3'
+services:
+  borgmatic:
+    image: tuetenk0pp/borg-rclone:${VERSION}
+    container_name: borgmatic
+    env_file:
+      - .env
+      - .env.override
+    volumes:
+      - ${VOLUME_RCLONE_CONFIG}:/root/.config/rclone
+

@@ -2,15 +2,15 @@
 
 ## run
 
-```bash
-docker run --env-file .env --mount .borg-rclone:/app --mount /mnt/user:/mnt/source:ro --mount /mnt/backups:/mnt/repo tuetenk0pp/borg-rclone:dev 
-```
+1. Add this to your Borgmatic config:
 
-## compose
+    ```yml
+    after_everything:
+        - "rclone $VOLUME_TARGET $RCLONE_DEST"
+    ```
 
-```compose
-# TODO
-```
+2. Create a file `rclone.conf` with a valid remote config and place it here: `./data/.config/rclone/rclone.conf`
+3. `docker compose up -d`
 
 ## build
 

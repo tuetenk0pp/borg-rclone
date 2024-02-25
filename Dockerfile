@@ -1,13 +1,12 @@
-FROM alpine:3.19.1
+FROM ghcr.io/borgmatic-collective/borgmatic:1.8.8
+LABEL maintainer='github.com/tuetenk0pp'
 
-RUN apk add --no-cache \
-    borgbackup \
-    rclone
+VOLUME /root/.config/rclone
 
-COPY ./entry.sh /entry.sh
+RUN apk add --update --no-cache \
+    rclone \
+    && rm -rf \
+    /var/cache/apk/* \
+    /.cache
 
-RUN chmod +x /entry.sh
 
-VOLUME [ "/mnt/source", "/mnt/repo", "/app/config", "/app/cache", "/app/data"]
-
-ENTRYPOINT [ "/entry.sh" ]
