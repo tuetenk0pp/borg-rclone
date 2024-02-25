@@ -1,8 +1,8 @@
 FROM alpine:3.19.1
 
-RUN apk add --no-cache borgbackup=1.2.7-r0
-
-RUN apk add --no-cache rclone=1.65.0-r0
+RUN apk add --no-cache \
+    borgbackup \
+    rclone
 
 COPY ./entry.sh /entry.sh
 
