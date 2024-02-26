@@ -1,0 +1,4 @@
+[submodule "docker-borgmatic"]
+	path = docker-borgmatic
+	url = https://github.com/borgmatic-collective/docker-borgmatic.git
+	branch = master

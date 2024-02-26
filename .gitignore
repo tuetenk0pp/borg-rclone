@@ -3,6 +3,6 @@ data/.config/
 data/.ssh/
 data/repository/
 .env
+.env.override
 data/borgmatic.d/
 !data/borgmatic.d/config.yaml
-docker-compose.yml
