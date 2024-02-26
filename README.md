@@ -23,7 +23,7 @@ It adds [rclone](https://rclone.org/) to the image to make it easy to sync backu
    docker run -it --rm --mount type=bind,src="$(pwd)/data/.config/rclone",target="/root/.config/rclone" ghcr.io/tuetenk0pp/borg-rclone bash -c "rclone config"
    ```
 
-4. Add this to your Borgmatic config and replace `RCLONE_DEST` with the remote you configured in the previous step:
+4. Add this to your Borgmatic config and replace `RCLONE_DEST` with your `remote:bucket` you configured in the previous step:
 
     ```yml
     after_everything:
