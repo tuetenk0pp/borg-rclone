@@ -10,7 +10,7 @@ It adds [rclone](https://rclone.org/) to the image to make it easy to sync backu
 > [!IMPORTANT]
 > Before you start, head over to the [Borgmatic](https://github.com/borgmatic-collective/docker-borgmatic) repository to find out how to use the image.
 
-1. Copy `.env.template` to `.env` and `.env.override.template` to `.env.override` and modify them to match your setup.
+1. Copy `.env.template` to `.env` and modify them to match your setup.
 2. Place your existing Borgmatic config in `./data/borgmatic.d` or create a new one with this command:
 
    ```bash
