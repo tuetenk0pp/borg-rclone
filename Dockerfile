@@ -1,4 +1,4 @@
-FROM ghcr.io/borgmatic-collective/borgmatic:1.8.8
+FROM ghcr.io/borgmatic-collective/borgmatic:1.8.9
 LABEL maintainer='github.com/tuetenk0pp'
 
 VOLUME /root/.config/rclone
