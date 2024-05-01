@@ -1,5 +1,10 @@
 # borg-rclone
 
+> [!WARNING]
+> This Repository is now archived, because the feature got implemented upstream. See this PR for reference: https://github.com/borgmatic-collective/docker-borgmatic/pull/324.
+> 
+> You might still want to follow part of the instructions to setup rclone initially.
+
 ## Description
 
 This repository extends the Docker image for [Borgmatic](https://github.com/borgmatic-collective/docker-borgmatic).
